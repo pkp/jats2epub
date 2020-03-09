@@ -32,7 +32,9 @@ Please see html readmes for more information.
 
 ## Maintainer and official website
 This package is hosted on github: https://github.com/eirikhanssen/jats2epub
-`ssh-clone url: git@github.com:eirikhanssen/jats2epub.git`
+```
+ssh-clone url: git@github.com:eirikhanssen/jats2epub.git
+```
 Author and maintainer of this readme and the jats2epub package on GitHub is Eirik Hanssen, Oslo and Akershus University College of Applied Sciences
 
 Contact: eirik dot hanssen at hioa dot no
@@ -60,7 +62,7 @@ I am currently working with two xml-based formats for the automatic tagging solu
     - If the xml file is tagged using only letters with no punctuation, if there is only one author, a dot is added to the end of the initial in the reference list, but if there are more authors, only the last author's initial will get a dot after the initial. This is a bug. Now it is important that the initials in <given-names> are given proper punctuation by the person tagging the xml-file. It would be better if the process_jats.xpl pipeline took care of it. Also we could allow to markup initials where an author has several given names using only initials and no punctuation, and let process_jats.xpl take care of the rest.
 - Further code cleanup:
     - Some issues have been fixed downstream instead of upstream. (A problem that has been fixed by modifying the 
-      erronous document instead of preventing the error from happening in the first place).
+      erroneous document instead of preventing the error from happening in the first place).
       It would be better to make sure the error didn't happen in the first place:
           - Problem with empty namespaces.
           - Problem with using element-citation elements for book-chapter type references.
